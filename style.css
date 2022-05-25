@@ -48,6 +48,7 @@ body {
 /*
  * Header
  */
+ 
 h1{
   margin: 0px;
 }
@@ -59,7 +60,6 @@ p.lead{
 padding: 1rem;
 }
 .nav-masthead{
-  justify-content: end;
   background-color: black;
   padding-right: 30px;
   
@@ -91,7 +91,9 @@ padding: 1rem;
   color: #845db6;
   border-bottom-color: #fff;
 }
-
+.nav-masthead .backbtn{
+  color: white;
+ }
 
 @media screen and (max-width: 500px) {
   .nav-masthead{
@@ -107,6 +109,16 @@ padding: 1rem;
 }
 .display-1{
   transition: 0.3s;
+}
+
+.game{
+  background: linear-gradient(135deg,#0693e3 0%,#9b51e0 86%);
+  border-radius: 10px;
+
+}
+img{
+  width: 150px;
+  height: 150px;
 }
 /*
  * Cover
