@@ -3,38 +3,64 @@ body{
     margin: 0px;
 }
 
+
 nav{
-    background-color: #F3f3f3;
+    background-color: black;
 
 }
-
+div.test{
+margin-right: 10%;
+}
 div.navbar{
     width: 100%;
-    height: 50px;
+    height: 80px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
 }
 a.navhome{
-    color: black;
-    padding: 10px 20px;
+    transition: all 0.4s;
+    cursor: pointer;
+    color: white;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
 }
+@media screen and (max-width: 800px) {
+    a.navhome {
+      font-size: 18px; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+  @media screen and (max-width: 500px) {
+    a.navhome {
+      font-size: 16px; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
 a.navhome:hover{
     color: #00b6fa;
-
     padding: 10px 20px;
+    padding-right: 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
 }
 a.navhome.active{
     color:#9282ff;
-    padding: 10px 20px;
+    padding: 20px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+}
+a.active:hover{
+    padding: 10px 20px;
+}
+a.navhome span:after {
+    content: '  \00bb';
+    opacity: 0;
+    transition: 0.4s;
+  }
+a.navhome:hover span:after {
+    opacity: 1;
 }
